@@ -1,9 +1,24 @@
+@import "../../responsive.scss";
+
 .profilePage {
-display: flex;
+  display: flex;
   height: 100%;
+
+  @include md{
+    flex-direction: column;
+    overflow: scroll;
+  }
+
 
   .details {
     flex: 3;
+    padding-bottom: 50px;
+    overflow-y: scroll;
+
+    @include md{
+      flex:none;
+      height: max-content;
+    }
 
     .wrapper {
       padding-right: 50px;
@@ -54,8 +69,15 @@ display: flex;
     height: 100%;
     background-color: #fcf5f3;
 
+
+    @include md{
+      flex:none;
+      height: max-content;
+    }
+
     .wrapper {
       padding: 0 20px;
+      height: 100%;
     }
 
   }

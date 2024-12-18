@@ -1,7 +1,9 @@
 import './profilePage.scss'
 import Chat from "../../components/chat/Chat.jsx";
+import List from "../../components/list/List.jsx";
 
 function ProfilePage() {
+
     return (
         <div className='profilePage'>
             <div className='details'>
@@ -26,6 +28,7 @@ function ProfilePage() {
                         <h1>My List</h1>
                         <button>Create New Post</button>
                     </div>
+                    <List />
                     <div className='title'>
                         <h1>Saved List</h1>
                     </div>
